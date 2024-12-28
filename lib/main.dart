@@ -113,7 +113,7 @@ class _EnergyConsumptionScreenState extends State<EnergyConsumptionScreen> {
                   color: _isDarkMode ? Colors.white : Colors.black),
             ),
             Text(
-              'Dòng điện tiêu thụ: ${_currentNow.toStringAsFixed(2)} mA',
+              'Dòng điện tiêu thụ: ${(_currentNow / 1000).toStringAsFixed(2)} mA',
               style: TextStyle(
                   fontSize: 20,
                   color: _isDarkMode ? Colors.white : Colors.black),

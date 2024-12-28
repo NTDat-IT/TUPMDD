@@ -27,7 +27,7 @@ class MainActivity : FlutterActivity() {
     private fun getBatteryStats(): Map<String, Any>? {
         val batteryManager = getSystemService(BATTERY_SERVICE) as BatteryManager
         val currentNow = batteryManager.getLongProperty(BatteryManager.BATTERY_PROPERTY_CURRENT_NOW)
-        val currentNowInMilliAmps = currentNow / 1000.0
+        val currentNowInMilliAmps = currentNow 
 
         return mapOf(
             "currentNow" to currentNowInMilliAmps
